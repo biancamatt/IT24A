@@ -45,6 +45,7 @@ class WeatherService extends WeatherApp {
             return;
         }
 
+        
         if (city) {
             const data = await this.getWeatherData(city);
             if (data) {
