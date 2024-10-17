@@ -94,7 +94,7 @@ class WeatherService extends WeatherApp {
         }
         return null;
     }
-    
+
 
     async getWeatherDataByCoordinates(latitude, longitude) {
         try {
@@ -109,6 +109,7 @@ class WeatherService extends WeatherApp {
     }
 
 }
+
 
 
 const weatherApp = new WeatherService();
