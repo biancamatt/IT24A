@@ -81,7 +81,7 @@ class WeatherService extends WeatherApp {
             alert('Geolocation is not supported by this browser.');
         }
     }
-    
+
 
     async getWeatherData(city) {
         try {
@@ -94,6 +94,7 @@ class WeatherService extends WeatherApp {
         }
         return null;
     }
+    
 
     async getWeatherDataByCoordinates(latitude, longitude) {
         try {
