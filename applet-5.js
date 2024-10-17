@@ -56,7 +56,7 @@ class WeatherService extends WeatherApp {
             alert('Please enter a city name.');
         }
     }
-    
+
 
     async fetchWeatherByLocation() {
         if (navigator.geolocation) {
