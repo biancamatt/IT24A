@@ -23,7 +23,7 @@ class todoList{
             this.todoInput.value = '';
         }
     }
-    
+
 
     addTask(taskText) {
         const listItem = document.createElement('li');
@@ -40,6 +40,7 @@ class todoList{
         this.todoList.appendChild(listItem);
     }
 
+    
     doneTask(event) {
         const taskItem = event.target.closest('.todo-item');
         const taskText = taskItem.querySelector('.task-text');
