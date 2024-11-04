@@ -4,7 +4,7 @@ class todoList{
         this.addButton = document.getElementById('addButton');
         this.todoInput = document.getElementById('todoInput');
         this.todoList = document.getElementById('todoList');
-        
+
 
         this.addButton.addEventListener('click', () => this.addOrUpdateTask());
         this.todoList.addEventListener('click', (e) => {
@@ -14,6 +14,7 @@ class todoList{
             if (action) this[action + 'Task'](e);
         });
     }
+    
 
     addOrUpdateTask() {
         const taskText = this.todoInput.value.trim();
