@@ -14,7 +14,7 @@ class todoList{
             if (action) this[action + 'Task'](e);
         });
     }
-    
+
 
     addOrUpdateTask() {
         const taskText = this.todoInput.value.trim();
@@ -23,6 +23,7 @@ class todoList{
             this.todoInput.value = '';
         }
     }
+    
 
     addTask(taskText) {
         const listItem = document.createElement('li');
