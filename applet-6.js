@@ -61,6 +61,7 @@ class todoList{
         this.todoList.removeChild(event.target.closest('.todo-item'));
     }
 
+    
     editTask(event) {
         const taskItem = event.target.closest('.todo-item');
         this.todoInput.value = taskItem.querySelector('.task-text').textContent;
